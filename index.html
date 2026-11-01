@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LivrExpress | Livraison Rapide & Sécurisée à Bobo-Dioulasso</title>
+    <meta name="description" content="LivrExpress est le service de livraison numéro 1 à Bobo-Dioulasso. Vos colis, plis et commandes livrés en moins de 30 minutes partout à Sya.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="brand-logo" id="logo-link">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-bolt-lightning"></i>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-name">Livr<span class="text-accent">Express</span></span>
+                    <span class="logo-city">Bobo-Dioulasso 🇧🇫</span>
+                </div>
+            </a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#accueil" class="nav-link active">Accueil</a>
+                <a href="#comment-ca-marche" class="nav-link">Comment ça marche</a>
+                <a href="#tarifs" class="nav-link">Tarifs</a>
+                <a href="#temoignages" class="nav-link">Témoignages</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <div class="mobile-cta-wrapper">
+                    <button class="btn btn-primary open-order-modal" id="mobile-order-btn">
+                        <i class="fa-solid fa-paper-plane"></i> Commander
+                    </button>
+                </div>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="https://wa.me/22670000000?text=Bonjour%20LivrExpress,%20je%20souhaite%20une%20livraison%20à%20Bobo" target="_blank" class="whatsapp-badge-btn" id="nav-whatsapp-btn" title="Contactez-nous sur WhatsApp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <span>WhatsApp</span>
+                </a>
+                <button class="btn btn-primary open-order-modal desktop-only" id="desktop-order-btn">
+                    <i class="fa-solid fa-motorcycle"></i> Commander
+                </button>
+                <button class="hamburger-btn" id="hamburger-btn" aria-label="Menu mobile">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="accueil">
+        <div class="hero-background-decorations">
+            <div class="blur-circle circle-1"></div>
+            <div class="blur-circle circle-2"></div>
+        </div>
+
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="pulse-indicator"></span>
+                    <i class="fa-solid fa-bolt"></i>
+                    <span>Service Express N°1 à Bobo-Dioulasso</span>
+                </div>
+                <h1 class="hero-title">
+                    Vos colis livrés en <span class="highlight-text">moins de 30 minutes</span> partout à Sya !
+                </h1>
+                <p class="hero-subtitle">
+                    Plis confidentiels, colis e-commerce, repas chauds ou courses urgentes : nos coursiers sillonnent Bobo-Dioulasso 7j/7 avec rapidité, fiabilité et traçabilité en temps réel.
+                </p>
+                <div class="hero-cta-group">
+                    <button class="btn btn-primary btn-lg open-order-modal" id="hero-cta-primary">
+                        <i class="fa-solid fa-box-open"></i>
+                        <span>Commander une course</span>
+                    </button>
+                    <a href="#tarifs" class="btn btn-secondary btn-lg" id="hero-cta-secondary">
+                        <i class="fa-solid fa-tags"></i>
+                        <span>Découvrir nos tarifs</span>
+                    </a>
+                </div>
+
+                <div class="hero-trust-elements">
+                    <div class="trust-item">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span>Livraison en 30 min chrono</span>
+                    </div>
+                    <div class="trust-item">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span>Paiement Orange Money / Moov / Espèces</span>
+                    </div>
+                    <div class="trust-item">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span>Tous quartiers de Bobo couverts</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero Visual Card / Quick Simulation -->
+            <div class="hero-visual">
+                <div class="hero-card-glass">
+                    <div class="card-status-pill">
+                        <i class="fa-solid fa-location-dot"></i> Coursier en direct sur Bobo
+                    </div>
+
+                    <div class="tracking-preview">
+                        <div class="tracking-step done">
+                            <div class="step-dot"><i class="fa-solid fa-check"></i></div>
+                            <div class="step-info">
+                                <strong>Ramassage effectué</strong>
+                                <span>Grand Marché de Bobo (14h10)</span>
+                            </div>
+                        </div>
+                        <div class="tracking-divider active"></div>
+                        <div class="tracking-step active">
+                            <div class="step-dot pulse"><i class="fa-solid fa-motorcycle"></i></div>
+                            <div class="step-info">
+                                <strong>En cours de livraison</strong>
+                                <span>En direction de Sarfalao (14h25)</span>
+                            </div>
+                        </div>
+                        <div class="tracking-divider"></div>
+                        <div class="tracking-step">
+                            <div class="step-dot"><i class="fa-solid fa-house"></i></div>
+                            <div class="step-info">
+                                <strong>Destination finale</strong>
+                                <span>Sarfalao Secteur 17 (Arrivée estimée : 14h35)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="quick-calculator-box">
+                        <div class="calculator-header">
+                            <i class="fa-solid fa-calculator"></i>
+                            <span>Simulateur express</span>
+                        </div>
+                        <div class="calc-row">
+                            <label for="calc-quartier-depart">Départ :</label>
+                            <select id="calc-quartier-depart" class="calc-select">
+                                <option value="centre">Centre-ville / Grand Marché</option>
+                                <option value="accart">Accart-ville</option>
+                                <option value="lafiabougou">Lafiabougou</option>
+                                <option value="sarfalao">Sarfalao</option>
+                                <option value="bindougou">Bindougou</option>
+                                <option value="koko">Koko / Bolomakoté</option>
+                                <option value="colma">Colma</option>
+                            </select>
+                        </div>
+                        <div class="calc-row">
+                            <label for="calc-quartier-arrivee">Arrivée :</label>
+                            <select id="calc-quartier-arrivee" class="calc-select">
+                                <option value="sarfalao" selected>Sarfalao</option>
+                                <option value="centre">Centre-ville / Grand Marché</option>
+                                <option value="accart">Accart-ville</option>
+                                <option value="lafiabougou">Lafiabougou</option>
+                                <option value="bindougou">Bindougou</option>
+                                <option value="koko">Koko / Bolomakoté</option>
+                                <option value="colma">Colma</option>
+                            </select>
+                        </div>
+                        <div class="calc-result">
+                            <span>Prix estimé :</span>
+                            <span class="calc-price" id="calc-price-display">1 500 FCFA</span>
+                        </div>
+                        <button class="btn btn-primary btn-block open-order-modal" id="calc-order-trigger">
+                            Commander ce trajet
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Bar -->
+    <section class="stats-section">
+        <div class="container stats-grid">
+            <div class="stat-card">
+                <div class="stat-number" data-target="15000">15 000+</div>
+                <div class="stat-label">Colis livrés à Bobo</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" data-target="25">25 min</div>
+                <div class="stat-label">Temps moyen de course</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" data-target="99">99.2%</div>
+                <div class="stat-label">Clients satisfaits</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">7j / 7</div>
+                <div class="stat-label">De 07h à 22h non-stop</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Comment ça marche -->
+    <section class="section-how" id="comment-ca-marche">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-pill"><i class="fa-solid fa-arrows-spin"></i> Processus Simplifié</span>
+                <h2 class="section-title">Comment ça marche ?</h2>
+                <p class="section-subtitle">
+                    Expédiez ou recevez vos colis à travers Bobo-Dioulasso en seulement 3 étapes simples et transparentes.
+                </p>
+            </div>
+
+            <div class="steps-grid">
+                <!-- Step 1 -->
+                <div class="step-card">
+                    <div class="step-badge-number">1</div>
+                    <div class="step-icon-wrapper">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                    </div>
+                    <h3 class="step-title">Faites votre demande</h3>
+                    <p class="step-description">
+                        Indiquez l’adresse de ramassage, le lieu de dépôt et le type de colis via notre site web ou directement sur WhatsApp.
+                    </p>
+                    <div class="step-footer-tag">
+                        <i class="fa-solid fa-clock"></i> Réponse en moins d'1 min
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="step-card highlight">
+                    <div class="step-badge-number">2</div>
+                    <div class="step-icon-wrapper">
+                        <i class="fa-solid fa-person-biking"></i>
+                    </div>
+                    <h3 class="step-title">Prise en charge éclair</h3>
+                    <p class="step-description">
+                        Un coursier LivrExpress à proximité se déploie immédiatement pour récupérer votre colis à l'endroit convenu.
+                    </p>
+                    <div class="step-footer-tag">
+                        <i class="fa-solid fa-shield-halved"></i> Colis scellé & sécurisé
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="step-card">
+                    <div class="step-badge-number">3</div>
+                    <div class="step-icon-wrapper">
+                        <i class="fa-solid fa-box-check"></i>
+                    </div>
+                    <h3 class="step-title">Livraison & Confirmation</h3>
+                    <p class="step-description">
+                        Votre destinataire est livré en main propre contre signature ou code SMS. Vous recevez une confirmation instantanée.
+                    </p>
+                    <div class="step-footer-tag">
+                        <i class="fa-solid fa-wallet"></i> Paiement à la réception
+                    </div>
+                </div>
+            </div>
+
+            <div class="how-cta-banner">
+                <div class="banner-content">
+                    <h4>Prêt à faire expédier un colis tout de suite ?</h4>
+                    <p>Nos livreurs sont déjà en route dans votre quartier.</p>
+                </div>
+                <button class="btn btn-primary open-order-modal" id="how-cta-btn">
+                    <i class="fa-solid fa-paper-plane"></i> Lancer une course maintenant
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Tarifs -->
+    <section class="section-pricing" id="tarifs">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-pill"><i class="fa-solid fa-receipt"></i> Transparence Totale</span>
+                <h2 class="section-title">Nos Offres et Tarifs</h2>
+                <p class="section-subtitle">
+                    Des prix étudiés et imbattables adaptés aux réalités de Bobo-Dioulasso, sans frais cachés.
+                </p>
+            </div>
+
+            <div class="pricing-grid">
+                <!-- Plan 1 -->
+                <div class="pricing-card" id="pricing-plan-flash">
+                    <div class="pricing-header">
+                        <div class="plan-icon">
+                            <i class="fa-solid fa-bolt"></i>
+                        </div>
+                        <h3 class="plan-name">Course Proximité</h3>
+                        <p class="plan-desc">Pour les petits colis, repas et plis dans le même secteur ou secteur adjacent.</p>
+                        <div class="plan-price">
+                            <span class="currency">FCFA</span>
+                            <span class="amount">1 000</span>
+                            <span class="period">/ course</span>
+                        </div>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fa-solid fa-check"></i> Distance jusqu’à 4 km</li>
+                        <li><i class="fa-solid fa-check"></i> Délai moyen : 15 à 25 minutes</li>
+                        <li><i class="fa-solid fa-check"></i> Colis légers jusqu'à 3 kg</li>
+                        <li><i class="fa-solid fa-check"></i> Confirmation de remise par SMS/WhatsApp</li>
+                        <li class="disabled"><i class="fa-solid fa-xmark"></i> Option courses multiples</li>
+                    </ul>
+                    <div class="pricing-footer">
+                        <button class="btn btn-outline btn-block open-order-modal" data-plan="Course Proximité (1 000 FCFA)">
+                            Choisir cette offre
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Plan 2 - Featured -->
+                <div class="pricing-card featured" id="pricing-plan-standard">
+                    <div class="popular-ribbon">Le plus choisi 🔥</div>
+                    <div class="pricing-header">
+                        <div class="plan-icon">
+                            <i class="fa-solid fa-motorcycle"></i>
+                        </div>
+                        <h3 class="plan-name">Course Inter-Quartiers</h3>
+                        <p class="plan-desc">Idéal pour traverser Bobo (ex: Grand Marché vers Lafiabougou, Sarfalao, Colma).</p>
+                        <div class="plan-price">
+                            <span class="currency">FCFA</span>
+                            <span class="amount">1 500</span>
+                            <span class="period">/ course</span>
+                        </div>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fa-solid fa-check"></i> Trajets partout dans la ville de Bobo</li>
+                        <li><i class="fa-solid fa-check"></i> Poids colis jusqu'à 15 kg</li>
+                        <li><i class="fa-solid fa-check"></i> Suivi en temps réel par le coursier</li>
+                        <li><i class="fa-solid fa-check"></i> Collecte d'argent (Cash on Delivery)</li>
+                        <li><i class="fa-solid fa-check"></i> Prise en charge prioritaire</li>
+                    </ul>
+                    <div class="pricing-footer">
+                        <button class="btn btn-primary btn-block open-order-modal" data-plan="Course Inter-Quartiers (1 500 FCFA)">
+                            Choisir cette offre
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Plan 3 -->
+                <div class="pricing-card" id="pricing-plan-pro">
+                    <div class="pricing-header">
+                        <div class="plan-icon">
+                            <i class="fa-solid fa-briefcase"></i>
+                        </div>
+                        <h3 class="plan-name">Pack E-commerce & Pro</h3>
+                        <p class="plan-desc">Dédié aux boutiques, pharmacies, restaurateurs et commerçants réguliers.</p>
+                        <div class="plan-price">
+                            <span class="currency">FCFA</span>
+                            <span class="amount">25 000</span>
+                            <span class="period">/ mois (carnet 30 courses)</span>
+                        </div>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fa-solid fa-check"></i> Soit ~830 FCFA la course illimitée en ville</li>
+                        <li><i class="fa-solid fa-check"></i> Coursier dédié à votre enseigne</li>
+                        <li><i class="fa-solid fa-check"></i> Gestion des retours & encaissements cash</li>
+                        <li><i class="fa-solid fa-check"></i> Facturation mensuelle & rapport détaillé</li>
+                        <li><i class="fa-solid fa-check"></i> Support WhatsApp VIP 7j/7</li>
+                    </ul>
+                    <div class="pricing-footer">
+                        <button class="btn btn-outline btn-block open-order-modal" data-plan="Pack Pro & Entreprise (25 000 FCFA)">
+                            Contacter le service Pro
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Note information -->
+            <div class="pricing-info-note">
+                <i class="fa-solid fa-circle-info"></i>
+                <span>Besoin d'un transport spécialisé (gros volume ou livraison hors Bobo : Tounouma, Banfora) ? <a href="https://wa.me/22670000000" target="_blank">Contactez notre support pour un devis instantané</a>.</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Témoignages -->
+    <section class="section-testimonials" id="temoignages">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-pill"><i class="fa-solid fa-star"></i> Retours d'expérience</span>
+                <h2 class="section-title">Ce que disent nos clients à Bobo</h2>
+                <p class="section-subtitle">
+                    Commerçants, professionnels et particuliers font confiance à LivrExpress chaque jour pour leurs courses.
+                </p>
+            </div>
+
+            <div class="testimonials-grid">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card">
+                    <div class="stars-row">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="testimonial-quote">
+                        « Je vends des vêtements en ligne depuis Lafiabougou. Avant LivrExpress, je perdais des clientes à cause des retards de livraison. Maintenant, mes colis arrivent en 20 minutes au Grand Marché ou à Sarfalao ! »
+                    </p>
+                    <div class="client-meta">
+                        <div class="client-avatar avatar-1">AS</div>
+                        <div class="client-details">
+                            <h4 class="client-name">Aminata Sanou</h4>
+                            <span class="client-role">Gérante de boutique, Lafiabougou</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card highlight-card">
+                    <div class="quote-badge"><i class="fa-solid fa-quote-right"></i></div>
+                    <div class="stars-row">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="testimonial-quote">
+                        « Une efficacité redoutable pour notre cabinet d'architecture. Nous envoyons des dossiers d'appels d'offres confidentiels et des contrats urgents. Les coursiers sont courtois, ponctuels et très professionnels. »
+                    </p>
+                    <div class="client-meta">
+                        <div class="client-avatar avatar-2">IO</div>
+                        <div class="client-details">
+                            <h4 class="client-name">Ibrahim Ouattara</h4>
+                            <span class="client-role">Directeur d'agence, Centre-ville Sya</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card">
+                    <div class="stars-row">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="testimonial-quote">
+                        « Un dimanche soir, j'avais oublié un médicament indispensable à Bindougou pour mon enfant. LivrExpress l'a récupéré et me l'a apporté à Koko en moins d'une demi-heure. Un service qui sauve la vie ! »
+                    </p>
+                    <div class="client-meta">
+                        <div class="client-avatar avatar-3">ST</div>
+                        <div class="client-details">
+                            <h4 class="client-name">Salimata Traoré</h4>
+                            <span class="client-role">Cliente particulière, Koko</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Local Coverage badges -->
+            <div class="coverage-box">
+                <span class="coverage-title"><i class="fa-solid fa-map-location-dot"></i> Quartiers desservis à Bobo :</span>
+                <div class="coverage-tags">
+                    <span class="tag">Grand Marché</span>
+                    <span class="tag">Accart-ville</span>
+                    <span class="tag">Lafiabougou</span>
+                    <span class="tag">Sarfalao</span>
+                    <span class="tag">Koko</span>
+                    <span class="tag">Bolomakoté</span>
+                    <span class="tag">Bindougou</span>
+                    <span class="tag">Colma</span>
+                    <span class="tag">Belleville</span>
+                    <span class="tag">Ouezzin-Ville</span>
+                    <span class="tag">Dogona</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="footer-top">
+            <div class="container footer-grid">
+                <!-- Col 1: Brand & Bio -->
+                <div class="footer-col brand-col">
+                    <a href="#" class="brand-logo footer-logo">
+                        <div class="logo-icon">
+                            <i class="fa-solid fa-bolt-lightning"></i>
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-name">Livr<span class="text-accent">Express</span></span>
+                            <span class="logo-city">Bobo-Dioulasso 🇧🇫</span>
+                        </div>
+                    </a>
+                    <p class="footer-description">
+                        LivrExpress est le leader des services de livraison urbaine à Bobo-Dioulasso. Rapidité, intégrité et satisfaction client au cœur de nos engagements quotidiens.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://facebook.com" target="_blank" aria-label="Facebook LivrExpress" class="social-icon">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="https://wa.me/22670000000" target="_blank" aria-label="WhatsApp LivrExpress" class="social-icon">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" aria-label="Instagram LivrExpress" class="social-icon">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://tiktok.com" target="_blank" aria-label="TikTok LivrExpress" class="social-icon">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Col 2: Navigation Links -->
+                <div class="footer-col">
+                    <h4 class="footer-title">Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="#accueil"><i class="fa-solid fa-angle-right"></i> Accueil</a></li>
+                        <li><a href="#comment-ca-marche"><i class="fa-solid fa-angle-right"></i> Comment ça marche</a></li>
+                        <li><a href="#tarifs"><i class="fa-solid fa-angle-right"></i> Grille tarifaire</a></li>
+                        <li><a href="#temoignages"><i class="fa-solid fa-angle-right"></i> Avis clients</a></li>
+                        <li><a href="#contact"><i class="fa-solid fa-angle-right"></i> Devenir livreur partenaire</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Services -->
+                <div class="footer-col">
+                    <h4 class="footer-title">Nos Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#tarifs"><i class="fa-solid fa-angle-right"></i> Livraison express 30 min</a></li>
+                        <li><a href="#tarifs"><i class="fa-solid fa-angle-right"></i> Expédition e-commerce</a></li>
+                        <li><a href="#tarifs"><i class="fa-solid fa-angle-right"></i> Plis & courriers administratifs</a></li>
+                        <li><a href="#tarifs"><i class="fa-solid fa-angle-right"></i> Achats & courses personnelles</a></li>
+                        <li><a href="#tarifs"><i class="fa-solid fa-angle-right"></i> Récupération en pharmacie</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Contact info Bobo-Dioulasso -->
+                <div class="footer-col">
+                    <h4 class="footer-title">Contactez-nous à Bobo</h4>
+                    <ul class="footer-contact-list">
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <strong>Agence principale :</strong>
+                                <span>Avenue de la Nation, face Banque Centrale, Bobo-Dioulasso, Burkina Faso</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <div>
+                                <strong>Téléphone direct :</strong>
+                                <a href="tel:+22670000000">+226 70 00 00 00</a> / <a href="tel:+22676000000">+226 76 00 00 00</a>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <div>
+                                <strong>WhatsApp Express :</strong>
+                                <a href="https://wa.me/22670000000" target="_blank">+226 70 00 00 00 (Chat direct)</a>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <strong>Email :</strong>
+                                <a href="mailto:contact@livrexpress-bobo.bf">contact@livrexpress-bobo.bf</a>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-clock"></i>
+                            <div>
+                                <strong>Horaires :</strong>
+                                <span>Lundi - Dimanche : 07h00 - 22h00</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-content">
+                <p>&copy; 2026 LivrExpress Bobo-Dioulasso. Tous droits réservés.</p>
+                <div class="footer-legal">
+                    <span>Fait avec <i class="fa-solid fa-heart text-accent"></i> pour la capitale économique du Faso</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Action WhatsApp Button -->
+    <a href="https://wa.me/22670000000?text=Bonjour%20LivrExpress,%20j'ai%20besoin%20d'une%20livraison%20rapide%20à%20Bobo" target="_blank" class="floating-whatsapp" id="floating-whatsapp-btn" title="Contactez-nous directement sur WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span class="tooltip">Besoin d'un coursier ?</span>
+    </a>
+
+    <!-- Order Modal -->
+    <div class="modal-overlay" id="order-modal">
+        <div class="modal-card">
+            <button class="modal-close" id="modal-close-btn" aria-label="Fermer la modal">&times;</button>
+            <div class="modal-header">
+                <div class="modal-badge"><i class="fa-solid fa-motorcycle"></i> Commande Instantanée</div>
+                <h3 class="modal-title">Demander une livraison</h3>
+                <p class="modal-desc">Remplissez les informations ci-dessous pour alerter un coursier immédiatement.</p>
+            </div>
+            <form id="order-form" class="modal-form">
+                <div class="form-group">
+                    <label for="order-name">Votre Nom ou Entreprise *</label>
+                    <input type="text" id="order-name" required placeholder="Ex: Moussa Ouédraogo">
+                </div>
+                <div class="form-group">
+                    <label for="order-phone">Numéro de téléphone / WhatsApp *</label>
+                    <input type="tel" id="order-phone" required placeholder="Ex: +226 70 00 00 00">
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="pickup-loc">Lieu de ramassage *</label>
+                        <input type="text" id="pickup-loc" required placeholder="Ex: Grand Marché, Boutique 42">
+                    </div>
+                    <div class="form-group">
+                        <label for="dropoff-loc">Lieu de dépôt (destination) *</label>
+                        <input type="text" id="dropoff-loc" required placeholder="Ex: Lafiabougou près de l'école">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="package-type">Type de colis & Détails</label>
+                    <select id="package-type">
+                        <option value="Course Proximité / Colis léger (1 000 FCFA)">Course Proximité / Colis léger (1 000 FCFA)</option>
+                        <option value="Course Inter-Quartiers / E-commerce (1 500 FCFA)">Course Inter-Quartiers / E-commerce (1 500 FCFA)</option>
+                        <option value="Colis volumineux ou spécifique (Sur devis)">Colis volumineux ou spécifique (Sur devis)</option>
+                        <option value="Pack Entreprise Mensuel (25 000 FCFA)">Pack Entreprise Mensuel (25 000 FCFA)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="order-notes">Instructions complémentaires (optionnel)</label>
+                    <textarea id="order-notes" rows="2" placeholder="Ex: Destinataire joignable au 75......, colis fragile"></textarea>
+                </div>
+
+                <div class="modal-buttons">
+                    <button type="submit" class="btn btn-primary btn-block">
+                        <i class="fa-brands fa-whatsapp"></i> Envoyer la course sur WhatsApp
+                    </button>
+                </div>
+                <p class="form-notice">
+                    <i class="fa-solid fa-lock"></i> Confirmation immédiate par notre régulateur à Bobo-Dioulasso.
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Success Notification Toast -->
+    <div class="toast-notification" id="toast-notification">
+        <i class="fa-solid fa-circle-check"></i>
+        <span id="toast-message">Votre demande a été initiée avec succès !</span>
+    </div>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
